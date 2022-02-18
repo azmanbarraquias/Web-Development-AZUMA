@@ -1,0 +1,355 @@
+<!-- type ! and tab give you BASIC HTML BOULERPLATE (TEMPLATE) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS"> <!-- For search engine-->
+    <meta name="description" content="this page is all about....">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        /* Text */
+        em {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="header"></p>
+    <h2>1. Head Section</h2>
+    <ul>
+        <li>charset="UTF-8"</li>
+        <li>meta name="viewport" content="width=device-width, initial-scale=1.0</li>
+        <li>name="viewport" content="width=device-width, initial-scale=1.0"</li>
+        <li>name="keywords" content="HTML, CSS" (For search engine)</li>
+        <li>name="description" content="this page is all about...."</li>
+        <li>title</li>
+    </ul>
+
+    <hr>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <h2>2. Text</h2>
+    <ul>
+        <h3>Dont use</h3>
+        <li>i tag</li>
+        <li>b tag</li>
+    </ul>
+    <ul>
+        <h3>Use</h3>
+        <li>em tag</li>
+        <li>strong stag</li>
+    </ul>
+
+    <p>I <strong>love</strong> to teach programming such as <em>HTML</em></p>
+
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+
+    <hr>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <h2>3. Entities</h2>
+    <p> I want to add angle brackets in &lt;HTML&gt;</p>
+    <p>copyright &copy;</p>
+    <p> &amp;nbsp; - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa debitis quas
+        excepturi
+        inventore!
+        Iure,&nbsp;deleniti. Beatae et vitae dignissimos expedita illum harum saepe hic adipisci? Dicta magni corporis
+        esse
+        repudiandae tenetur incidunt commodi minus ullam, dignissimos nemo laboriosam libero, vero consequuntur magnam
+        porro recusandae tempore vitae! Numquam, necessitatibus rerum.</p>
+
+    <hr>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <h2>4. Hyperlinks</h2>
+    <ul>
+        <h3>Example</h3>
+        <li> <a href="https://www.google.com" target="_blank">Google</a> <br></li>
+        <li> <a href="../1. Web Development Fundamentals/index.html">Fundamental of web development</a></li>
+        <li><a href="images/Azman.png" download>Click to download<br><img src="images/Azman.png"
+                    alt="my profile image"></a>
+        </li>
+        <li> <a
+                href="/HTML5 and CSS3 Part 1 - Fundamentals of Web Development/1. Web Development Fundamentals/index.html">absolute
+                URL</a></li>
+        <li><a href="#header">Go to header section</a></li>
+        <li><a href="mailto:azmanbarraquias@gmail.com">Email to me</a></li>
+    </ul>
+
+    <hr>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <h2>5. images</h2>
+    <style>
+        img.images0 {
+            width: 200px;
+            height: 200px;
+        }
+
+        img.images1 {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        img.images2 {
+            width: 200px;
+            height: 200px;
+            object-fit: none;
+        }
+
+        img.images3 {
+            width: 200px;
+            height: 200px;
+            object-fit: scale-down;
+        }
+    </style>
+    <img src="" alt="example on alt attribute if image can't be loaded"> <br><br>
+    <ul>
+        <li>default 200x200<br><img class="images0" src="images/arif-riyanto-unsplash.jpg"
+                alt="person facing begind coding on computer">
+        </li>
+        <li> object-fit:cover - 200x200<br><img class="images1" src="images/arif-riyanto-unsplash.jpg"
+                alt="person facing begind coding on computer">
+        </li>
+        <li>object-fit:none - 200x200<br> <img class="images2" src="images/arif-riyanto-unsplash.jpg"
+                alt="person facing begind coding on computer">
+        <li>object-fit:scale down - 200x200<br> <img class="images3" src="images/arif-riyanto-unsplash.jpg"
+                alt="person facing begind coding on computer">
+        </li>
+    </ul>
+    <hr>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <h2>6. Video and Audio</h2>
+    <style>
+        video {
+            width: 560px;
+        }
+    </style>
+    <ul>
+        <h3>Videos</h3>
+        <li>
+            <p>local video</p>
+            <video src="videos/coding.mp4" type="video/mp4" controls autoplay>
+                Show this, if video is not supported on not loaded.
+            </video>
+        </li>
+        <li>
+            <p>external video</p>
+            <video controls autoplay loop
+                src='https://player.vimeo.com/external/574060444.sd.mp4?s=682b736fa793dd93acd5ed89f23f866efb4a5f3f&amp;profile_id=164&amp;oauth2_token_id=57447761'
+                type='video/mp4'> </video>
+        </li>
+        <li>
+            <p>video from youtube</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PNjNFatebgY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </li>
+    </ul>
+
+    <ul>
+        <h3>Audio</h3>
+        <li>
+            <p>Yung Gravy - oops! (Local file)</p>
+            <p>Yung Gravy - Cheryl </p>
+            <audio controls src="audious/Yung Gravy - Cheryl (Lyrics).mp3" type="audio/mp3"> Show this, if
+                audio is not supported on not loaded.</audio>
+
+        </li>
+        <li>
+            <p>Yung Gravy - oops! (External file)</p>
+            <audio autoplay controls
+                src="https://ytmp4.buzz/download/NIdWvUuEBB0/mp3/320/1645188332/8cc5617c57f452081f74c314612321fd03220933f317a623ebfaf28daef36a5a/0">audio
+                is not supported</audio>
+        </li>
+    </ul>
+
+    <hr>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <h2>7. Lists</h2>
+    <!-- zen coding ul>li*3 -->
+    <style>
+
+    </style>
+    <ul>
+        <h3>Unorder List</h3>
+        <li>About me</li>
+        <ul>
+            <li>Item 1</li>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <li>Courses</li>
+            <li>Subscribe</li>
+            <li>Contact me</li>
+        </ul>
+    </ul>
+
+    <ol>
+        <h3>Order List</h3>
+        <li>Item 1</li>
+        <ol>
+            <li>Item 1</li>
+        </ol>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <dl>
+        <h3>Discription List</h3>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Stylesheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScripts</dd>
+    </dl>
+    <hr>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <h2>8. Tables</h2>
+    <style>
+        table,
+        td,
+        th {
+            border: 2px solid gray;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        tfoot {
+            text-align: left;
+        }
+    </style>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Expenses</th>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <th>Ammount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marketing</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Accounting</td>
+                <td>$200</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total:</th>
+                <th>$300</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <hr>
+
+    <h2>9. Container</h2>
+    <style>
+        /* all div with the product class */
+        div.product {
+            background-color: yellow;
+            width: 300px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <!-- Div is a block-level-element -->
+    <div class="product">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a href="#">Link</a>
+    </div>
+
+    <div class="product">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <a href="#">Link</a>
+    </div>
+
+    <p>
+    <div class="highlight">Lorem</div> ipsum dolor sit amet.</p>
+    <!-- VS -->
+    <span class="highlight">Lorem</span> ipsum dolor sit amet.</p>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <hr>
+
+    <h2>10. Sematic Elements</h2>
+    <article class="article">
+        <h1>Heading</h1>
+        <p>Publish <time datetime="2022-01-01 17:00">January 1 2022 05:00pm </time></p>
+        <p><mark>Lorem ipsum</mark> dolor sit amet consectetur adipisicing elit. Cupiditate obcaecati iure sunt
+            temporibus doloribus
+            natus error quibusdam dolor ipsam aliquid!</p>
+    </article>
+
+    <figure>
+        <figcaption>My Profile Picture</figcaption>
+        <img src="images/Azman.png" alt="My Profile Picture">
+        <figcaption>My Profile Picture</figcaption>
+    </figure>
+
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <hr>
+
+    <h2>10. Structures a web page</h2>
+    <ol>
+        <li>header - present introduction of element</li>
+        <li>main - main contain of the page, use only one</li>
+        <li>nav - link or menu</li>
+        <li>aside - content related to main content </li>
+        <li>footer - same as header but places last part of web page</li>
+        <li>article</li>
+        <li>section - group related element</li>
+    </ol>
+
+
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+</body>
+
+</html>
