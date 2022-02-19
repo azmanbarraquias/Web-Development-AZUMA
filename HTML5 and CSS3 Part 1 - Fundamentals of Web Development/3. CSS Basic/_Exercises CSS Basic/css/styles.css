@@ -1,0 +1,59 @@
+body {
+  margin: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  color: #3c3c3d;
+  font-size: 50px;
+}
+
+h2 {
+  color: #ff644e;
+  font-size: 25px;
+}
+
+p {
+  margin-top: 50px;
+}
+
+/* 1. Create a table as shown below. Use pseudo-class selectors to highlight
+      the odd rows. */
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #4e81e7;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: #d3e1ee;
+  border-bottom: 1px solid #c4dcf3;
+}
+
+/* 2. Create a box as shown below */
+.box {
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  background-color: tomato;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  padding-top: 35px;
+}
+li {
+  padding: 5px;
+}
