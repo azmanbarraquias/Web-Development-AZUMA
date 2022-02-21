@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div[class^="container"] {
+        margin-bottom: 10px;
+      }
+
+      .container1 {
+        display: grid;
+        /* 3 x 2 */
+        grid-template-rows: 100px 100px 100px;
+        grid-template-columns: 100px 100px;
+        border: 3px solid blue;
+      }
+
+      .container2 {
+        display: grid;
+        /* 3 x 2 */
+        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(2, 100px);
+
+        border: 3px solid red;
+      }
+
+      .container3 {
+        display: grid;
+        /* shorthand */
+        grid-template: repeat(3, 100px) / repeat(2, 100px);
+        border: 3px solid green;
+      }
+
+      .container4 {
+        display: grid;
+        /* shorthand */
+        grid-template: repeat(3, 100px) / repeat(2, 100px);
+        border: 3px solid green;
+      }
+
+      .box4 {
+        width: 5rem;
+        height: 5rem;
+        background-color: gold;
+      }
+
+      .container5 {
+        display: grid;
+        /* shorthand */
+        grid-template: repeat(3, 100px) / repeat(2, 100px);
+        border: 3px solid green;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .box5 {
+        width: 5rem;
+        height: 5rem;
+        background-color: gold;
+      }
+
+      .container6 {
+        display: grid;
+        /* shorthand */
+        grid-template: repeat(3, 100px) / repeat(2, 100px);
+        border: 3px solid green;
+        justify-items: center;
+        align-items: center;
+
+        /* Align the grid it self */
+        justify-content: center;
+        align-content: flex-end;
+        height: 150vh;
+      }
+
+      .box6 {
+        width: 5rem;
+        height: 5rem;
+        background-color: gold;
+      }
+
+      .container7 {
+        display: grid;
+        /* shorthand */
+        grid-template: repeat(3, 100px) / repeat(2, 100px);
+        border: 3px solid green;
+        /* justify-items and align-items default value is stretch */
+        justify-items: stretch;
+        align-items: stretch;
+      }
+
+      .box7 {
+        background-color: gold;
+      }
+
+      .container8 {
+        display: grid;
+        /* shorthand */
+        grid-template: repeat(3, 100px) / 100px 30% 70%;
+        border: 3px solid green;
+        /* justify-items and align-items default value is stretch */
+        justify-items: stretch;
+        align-items: stretch;
+      }
+
+      .box8 {
+        background-color: gold;
+      }
+
+      .container9 {
+        display: grid;
+        /* fr a fraction of available space */
+        grid-template: repeat(3, 100px) / 100px 30fr 70fr;
+        border: 3px solid green;
+        /* justify-items and align-items default value is stretch */
+        justify-items: stretch;
+        align-items: stretch;
+      }
+
+      .box9 {
+        background-color: gold;
+      }
+
+      .container10 {
+        display: grid;
+        /* fr a fraction of available space */
+        grid-template: 100px auto 100px/ 30fr 70fr;
+        border: 3px solid green;
+        /* justify-items and align-items default value is stretch */
+        justify-items: stretch;
+        align-items: stretch;
+        height: 100vh;
+      }
+
+      .box10 {
+        background-color: gold;
+      }
+
+      .container11 {
+        display: grid;
+        /* fr a fraction of available space */
+        grid-template: 100px auto 100px/ 30fr 70fr;
+        border: 3px solid green;
+        /* justify-items and align-items default value is stretch */
+        justify-items: stretch;
+        align-items: stretch;
+        height: 100vh;
+
+        column-gap: 10px;
+        row-gap: 10px;
+        /* shorthand gap: row column */
+      }
+
+      .box11 {
+        background-color: gold;
+      }
+
+      .container12 {
+        display: grid;
+        /* fr a fraction of available space */
+        grid-template: 100px auto 100px/ 30fr 70fr;
+        border: 3px solid green;
+        /* justify-items and align-items default value is stretch */
+        justify-items: stretch;
+        align-items: stretch;
+        height: 100vh;
+
+        column-gap: 10px;
+        row-gap: 10px;
+        /* shorthand gap: row column */
+      }
+
+      .box12 {
+        background-color: gold;
+      }
+
+      .box-one12 {
+        grid-column: 2;
+      }
+
+      .container13 {
+        display: grid;
+        /* fr a fraction of available space */
+        grid-template: 100px auto 100px/ 30fr 70fr;
+        border: 3px solid green;
+        /* justify-items and align-items default value is stretch */
+        justify-items: stretch;
+        align-items: stretch;
+        height: 100vh;
+
+        column-gap: 10px;
+        row-gap: 10px;
+        /* shorthand gap: row column */
+      }
+
+      .box13 {
+        background-color: gold;
+      }
+
+      .box-one13 {
+        /* 3 or -1 is the same */
+        grid-column: 1 / 3;
+      }
+
+      .container14 {
+        display: grid;
+        /* fr a fraction of available space */
+        grid-template: 100px auto 100px/ 30fr 70fr;
+        border: 3px solid green;
+        /* justify-items and align-items default value is stretch */
+        justify-items: stretch;
+        align-items: stretch;
+        height: 100vh;
+
+        column-gap: 10px;
+        row-gap: 10px;
+        /* shorthand gap: row column */
+      }
+
+      .box14 {
+        background-color: gold;
+      }
+
+      .box-one14 {
+        grid-column: 1 / span 2;
+        /* or 2/ span 2 */
+        grid-row: 2/ 4;
+      }
+
+      .container15 {
+        display: grid;
+        /* fr a fraction of available space */
+        grid-template: 100px auto 100px/ 30fr 70fr;
+        grid-template-areas:
+          "header  header"
+          "sidebar main"
+          "footer  footer";
+        border: 3px solid green;
+        /* justify-items and align-items default value is stretch */
+        justify-items: stretch;
+        align-items: stretch;
+        height: 100vh;
+        gap: 10px 10px;
+        /* shorthand gap: row column */
+      }
+
+      .box15 {
+        background-color: gold;
+      }
+
+      .box-one15 {
+        grid-column: 1 / span 2;
+        /* start / end */
+        /* row / column */
+        grid-row: 1 / 1 / 1 / 3;
+      }
+
+      .container16 {
+        display: grid;
+        /* fr a fraction of available space */
+        grid-template: 100px auto 100px/ 30fr 70fr;
+        /* period . empty cell */
+        grid-template-areas:
+          "header  header"
+          "sidebar main"
+          ".  footer";
+        border: 3px solid green;
+        /* justify-items and align-items default value is stretch */
+        height: 100vh;
+
+        column-gap: 10px;
+        row-gap: 10px;
+        /* shorthand gap: row column */
+      }
+
+      .box16 {
+        background-color: gold;
+      }
+
+      .box-one16 {
+        grid-area: header;
+      }
+
+      .box-five16 {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1"></div>
+    <div class="container2"></div>
+    <div class="container3"></div>
+    <div class="container4">
+      <div class="box4">A</div>
+      <div class="box4">B</div>
+      <div class="box4">C</div>
+      <div class="box4">D</div>
+    </div>
+    <div class="container5">
+      <div class="box5">A</div>
+      <div class="box5">B</div>
+      <div class="box5">C</div>
+      <div class="box5">D</div>
+    </div>
+    <div class="container6">
+      <div class="box6">A</div>
+      <div class="box6">B</div>
+      <div class="box6">C</div>
+      <div class="box6">D</div>
+    </div>
+    <div class="container7">
+      <div class="box7">A</div>
+      <div class="box7">B</div>
+      <div class="box7">C</div>
+      <div class="box7">D</div>
+    </div>
+    <div class="container8">
+      <div class="box8">A</div>
+      <div class="box8">B</div>
+      <div class="box8">C</div>
+      <div class="box8">D</div>
+    </div>
+    <div class="container9">
+      <div class="box9">A</div>
+      <div class="box9">B</div>
+      <div class="box9">C</div>
+      <div class="box9">D</div>
+    </div>
+    <div class="container10">
+      <div class="box10">A</div>
+      <div class="box10">B</div>
+      <div class="box10">C</div>
+      <div class="box10">D</div>
+    </div>
+
+    <div class="container11">
+      <div class="box11">A</div>
+      <div class="box11">B</div>
+      <div class="box11">C</div>
+      <div class="box11">D</div>
+    </div>
+
+    <div class="container12">
+      <div class="box12 box-one12">A</div>
+      <div class="box12">B</div>
+      <div class="box12">C</div>
+      <div class="box12">D</div>
+      <div class="box12">E</div>
+      <div class="box12">F</div>
+    </div>
+
+    <div class="container14">
+      <div class="box14 box-one14">A</div>
+      <div class="box14">B</div>
+      <div class="box14">C</div>
+      <div class="box14">D</div>
+      <div class="box14">E</div>
+    </div>
+
+    <div class="container15">
+      <div class="box15 box-one15">A</div>
+      <div class="box15">B</div>
+      <div class="box15">C</div>
+      <div class="box15">D</div>
+      <div class="box15">E</div>
+    </div>
+
+    <div class="container16">
+      <div class="box16 box-one16">A</div>
+      <div class="box16">B</div>
+      <div class="box16">C</div>
+      <div class="box16 box-five16">D</div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

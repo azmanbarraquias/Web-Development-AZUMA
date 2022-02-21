@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .box {
+        padding: 10px;
+        background-color: gold;
+      }
+
+      .box:nth-last-of-type(2) {
+        background-color: hotpink;
+      }
+
+      /*
+        screen for web
+        print for printer
+        Between 600px-900px
+      @media screen and (min-width: 600px) and (max-width: 900px) apply this style
+        */
+      @media screen and (min-width: 600px) {
+        .container {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        .container {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .box {
+          background-color: rgb(100, 226, 17);
+        }
+      }
+
+      @media print {
+        body {
+          font-size: 12pt;
+        }
+
+        .box {
+          background-color: gray;
+          padding: 0.5cm;
+        }
+        .box::after {
+          content: "..";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        Media queries is for responsive design
+        > desktop 
+        > mobile
+    -->
+    <div class="container">
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam
+          veritatis, tempore, repudiandae hic minima in saepe, consectetur
+          pariatur quis nihil! Tenetur repudiandae quibusdam repellendus commodi
+          distinctio, in harum excepturi!
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam
+          veritatis, tempore, repudiandae hic minima in saepe, consectetur
+          pariatur quis nihil! Tenetur repudiandae quibusdam repellendus commodi
+          distinctio, in harum excepturi!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

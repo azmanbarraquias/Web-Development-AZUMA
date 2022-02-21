@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div[class^="container"] {
+        margin-bottom: 10px;
+      }
+      .container {
+        border: 3px solid lightgray;
+      }
+
+      .box {
+        width: 5rem;
+        height: 5rem;
+        background-color: violet;
+        margin: 1rem;
+      }
+
+      /*  Enable flex */
+      .container1 {
+        border: 3px solid lightgray;
+        display: flex;
+      }
+
+      .box1 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(58, 207, 28);
+        margin: 1rem;
+      }
+
+      .container2 {
+        border: 3px solid lightgray;
+        display: flex;
+        /*  flex-direction: default is row */
+        flex-direction: row-reverse;
+      }
+
+      .box2 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(58, 207, 28);
+        margin: 1rem;
+      }
+
+      .container2 {
+        border: 3px solid lightgray;
+        display: flex;
+        /*  flex-direction: default is row */
+        flex-direction: row-reverse;
+      }
+
+      .box2 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(58, 207, 28);
+        margin: 1rem;
+      }
+
+      /* Alignment */
+
+      .container2 {
+        border: 3px solid lightgray;
+        display: flex;
+        /*  flex-direction: default is row */
+        flex-direction: row-reverse;
+      }
+
+      .box2 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(224, 85, 30);
+        margin: 1rem;
+      }
+
+      .container3 {
+        border: 3px solid lightgray;
+        display: flex;
+        /*  flex-direction: default is row */
+        flex-direction: row;
+        /* justify-content:default is flex-start */
+        justify-content: center;
+      }
+
+      .box3 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(79, 69, 212);
+        margin: 1rem;
+      }
+
+      .container4 {
+        border: 3px solid lightgray;
+        display: flex;
+        /*  flex-direction: default is row */
+        flex-direction: row;
+        /* justify-content:default is flex-start */
+        justify-content: space-between;
+      }
+
+      .box4 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(79, 69, 212);
+        margin: 1rem;
+      }
+
+      .container5 {
+        border: 3px solid lightgray;
+        display: flex;
+        /*  flex-direction: default is row */
+        flex-direction: row;
+        /* justify-content:default is flex-start */
+        /*
+            justify-content: X axis
+            align-items: Y axis
+         */
+        justify-content: center;
+
+        align-items: center;
+        height: 30vh;
+      }
+
+      .box5 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(46, 240, 198);
+        margin: 1rem;
+      }
+
+      .container6 {
+        border: 3px solid lightgray;
+        display: flex;
+        /*  flex-direction: default is row */
+        flex-direction: row;
+        /* justify-content:default is flex-start */
+        /*
+            justify-content: X axis
+            align-items: Y axis
+         */
+        justify-content: center;
+
+        align-items: center;
+        height: 30vh;
+      }
+
+      .box6 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(218, 25, 25);
+        margin: 1rem;
+      }
+
+      .container7 {
+        border: 3px solid lightgray;
+        display: flex;
+        /*  flex-direction: default is row */
+        flex-direction: row;
+        /* justify-content:default is flex-start */
+        /*
+            justify-content: X axis
+            align-items: Y axis
+         */
+        justify-content: center;
+
+        align-items: center;
+        height: 70vh;
+        /*
+        flex-wrap: default is no warp;
+         */
+        flex-wrap: wrap;
+      }
+
+      .box7 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(214, 32, 169);
+        margin: 1rem;
+      }
+
+      .container8 {
+        border: 3px solid lightgray;
+        display: flex;
+        /*  flex-direction: default is row */
+        flex-direction: row;
+        /* justify-content:default is flex-start */
+        /*
+            justify-content: X axis
+            align-items: Y axis
+         */
+        justify-content: center;
+
+        align-items: center;
+        height: 70vh;
+        /*
+        flex-wrap: default is no warp;
+         */
+        flex-wrap: wrap;
+
+        align-content: center;
+      }
+
+      .box8 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(182, 211, 18);
+        margin: 1rem;
+      }
+
+      .container9 {
+        border: 3px solid lightgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+      }
+
+      .box9 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(20, 193, 216);
+        margin: 1rem;
+      }
+
+      .box9-one {
+        /* override the align-item:center -> flex-start */
+        align-self: flex-start;
+      }
+
+      .container10 {
+        border: 3px solid lightgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+      }
+
+      .box10 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(238, 95, 69);
+        margin: 1rem;
+
+        /* flex-basic: default is auto */
+        /* flex-basic - override the width property or depend on the direction
+           since the flex basic is row flex-basic effect on width else height if column
+        */
+        flex-basis: 10rem;
+      }
+
+      .box10-one {
+        flex-basis: 5rem;
+      }
+
+      .container11 {
+        border: 3px solid lightgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+      }
+
+      .box11 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(214, 35, 175);
+        margin: 1rem;
+
+        /* flex-basic: default is auto */
+        /* flex-basic - override the width property or depend on the direction
+           since the flex basic is row flex-basic effect on width else height if column
+        */
+        flex-basis: 15rem;
+
+        /* flex-shrink: default is 1, minimum of shrink */
+        flex-shrink: 1;
+      }
+
+      .box11-one {
+        /* prevent from shrinking */
+        flex-shrink: 0;
+      }
+
+      .container12 {
+        border: 3px solid lightgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+      }
+
+      .box12 {
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(113, 50, 230);
+        margin: 1rem;
+
+        /* shorthand: flex:(grow)(shrink))(basis) take 0-1 only */
+        flex: 0.5 1 10rem;
+      }
+
+      .box12-one {
+        /* prevent from shrinking */
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">A</div>
+      <div class="box">B</div>
+      <div class="box">C</div>
+    </div>
+
+    <div class="container1">
+      <div class="box1">A</div>
+      <div class="box1">B</div>
+      <div class="box1">C</div>
+    </div>
+
+    <div class="container2">
+      <div class="box2">A</div>
+      <div class="box2">B</div>
+      <div class="box2">C</div>
+    </div>
+
+    <div class="container3">
+      <div class="box3">A</div>
+      <div class="box3">B</div>
+      <div class="box3">C</div>
+    </div>
+
+    <div class="container4">
+      <div class="box4">A</div>
+      <div class="box4">B</div>
+      <div class="box4">C</div>
+    </div>
+    <div class="container5">
+      <div class="box5">A</div>
+      <div class="box5">B</div>
+      <div class="box5">C</div>
+    </div>
+
+    <div class="container6">
+      <div class="box6">A</div>
+      <div class="box6">B</div>
+      <div class="box6">C</div>
+      <div class="box6">E</div>
+      <div class="box6">F</div>
+      <div class="box6">G</div>
+      <div class="box6">H</div>
+    </div>
+
+    <p>Wrap</p>
+    <div class="container7">
+      <div class="box7">A</div>
+      <div class="box7">B</div>
+      <div class="box7">C</div>
+      <div class="box7">E</div>
+      <div class="box7">F</div>
+      <div class="box7">G</div>
+      <div class="box7">H</div>
+    </div>
+
+    <div class="container8">
+      <div class="box8">A</div>
+      <div class="box8">B</div>
+      <div class="box8">C</div>
+      <div class="box8">E</div>
+      <div class="box8">F</div>
+      <div class="box8">G</div>
+      <div class="box8">H</div>
+    </div>
+
+    <div class="container9">
+      <div class="box9 box9-one">A</div>
+      <div class="box9">B</div>
+      <div class="box9">C</div>
+    </div>
+
+    <h2>Sizing Items</h2>
+    <div class="container10">
+      <div class="box10 box10-one">A</div>
+      <div class="box10">B</div>
+      <div class="box10">C</div>
+    </div>
+
+    <p>flex-growth</p>
+    <div class="container11">
+      <div class="box11 box11-one">A</div>
+      <div class="box11">B</div>
+      <div class="box11">C</div>
+    </div>
+
+    <div class="container12">
+      <div class="box12 box12-one">A</div>
+      <div class="box12">B</div>
+      <div class="box12">C</div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

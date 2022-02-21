@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        /* Universal selector */
+        box-sizing: border-box;
+      }
+
+      .box1::before {
+        content: "Hello";
+      }
+
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      .box1 {
+        background-color: grey;
+        padding: 20px;
+        border: 10px solid salmon;
+      }
+
+      .box2 {
+        background-color: grey;
+        padding: 20px;
+        border: 10px solid rgb(228, 23, 0);
+        margin: 10px;
+      }
+
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: grey;
+        /* box-sizing: border-box; - subtract the size of the element  */
+        box-sizing: border-box;
+      }
+
+      .box4 {
+        width: 100px;
+        height: 100px;
+        background-color: grey;
+        /* box-sizing: border-box; - subtract the size of the element  */
+        box-sizing: border-box;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">Box1</div>
+    <div class="box2">Box2</div>
+    <span class="box3">Box3</span><span class="box4">Box4</span>
+    <span class="box4">Box4</span>
+  </body>
+</html>
