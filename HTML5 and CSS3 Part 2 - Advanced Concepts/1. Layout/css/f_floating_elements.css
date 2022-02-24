@@ -1,0 +1,100 @@
+.avatar1 {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+}
+
+.avatar2 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(85, 72, 1);
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.avatar3 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(41, 0, 223);
+  float: right;
+  margin-right: 10px;
+}
+
+.avatar4 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(0, 67, 145);
+  float: left;
+  margin-right: 10px;
+}
+
+.avatar5 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(0, 67, 145);
+  float: left;
+  margin-right: 10px;
+}
+
+.tweet {
+  border: 3px solid lightcoral;
+  margin-bottom: 30px;
+}
+.avatar5 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(0, 67, 145);
+  float: left;
+  margin-right: 10px;
+}
+
+.avatar6 {
+  /* avatar is a floating element by default parent element doesn't see floating element */
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(53, 139, 13);
+  float: left;
+  margin-right: 10px;
+}
+
+.avatar7 {
+  /* avatar is a floating element by default parent element doesn't see floating element */
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(209, 46, 108);
+  float: left;
+  margin-right: 10px;
+}
+
+/* .tweet::after {
+    content: "";
+    display: block;
+    clear: both;
+  } */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Overflow */
+.avatar8 {
+  /* avatar is a floating element by default parent element doesn't see floating element */
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(209, 25, 154);
+  float: left;
+  margin-right: 10px;
+}
+
+.tweet8 {
+  border: 3px solid lightcoral;
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+.clear {
+  /* left, right, both */
+  clear: left;
+}

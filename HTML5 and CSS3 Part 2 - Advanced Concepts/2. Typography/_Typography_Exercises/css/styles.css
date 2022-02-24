@@ -1,0 +1,59 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 2.5rem;
+  background-color: rgb(116, 116, 116);
+  padding: 10px;
+}
+
+p {
+  font-family: "Source Sans Pro", Arial, Helvetica, serif;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  max-width: 1140px;
+  margin: auto;
+  border: 1px solid black;
+  padding: 1rem 2.5rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 5.61rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 4.209rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 3.157rem;
+}
+
+ol {
+  width: 70%;
+}
+
+ol li {
+  margin-bottom: 1.5rem;
+}

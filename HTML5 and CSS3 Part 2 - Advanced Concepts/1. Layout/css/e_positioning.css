@@ -1,0 +1,108 @@
+body {
+  margin: 10px;
+  height: 200vh;
+}
+
+.boxes1 {
+  border: 3px solid lightgray;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+
+.box-one1 {
+  background-color: lightcoral;
+}
+
+.box-two1 {
+  background-color: lightgreen;
+  position: relative;
+  left: 3rem;
+  /* add 3rem of space on left  if the box, push the box to the right */
+  bottom: 2rem;
+}
+
+.box-three1 {
+  background-color: lightskyblue;
+  position: relative;
+  bottom: 3rem;
+}
+
+.boxes2 {
+  border: 3px solid lightgray;
+}
+
+.box-one2 {
+  background-color: lightcoral;
+}
+
+.box-two2 {
+  background-color: lightgreen;
+  position: relative;
+  left: 3rem;
+  bottom: 2rem;
+  z-index: -1;
+}
+
+.box-three2 {
+  background-color: lightskyblue;
+  position: relative;
+  bottom: 3rem;
+}
+
+.boxes3 {
+  border: 3px solid lightgray;
+  position: relative;
+}
+
+.box-one3 {
+  background-color: lightcoral;
+}
+
+.box-two3 {
+  background-color: lightgreen;
+  position: absolute;
+  z-index: 1;
+  right: 2em;
+  bottom: -2rem;
+
+  /* when set to absolute positioning an element that element will remove the normal flow of the page, the absolute positioning will set to its container. */
+}
+
+.box-three3 {
+  background-color: lightskyblue;
+}
+
+.boxes4 {
+  border: 3px solid lightgray;
+  position: relative;
+}
+
+.box-one4 {
+  background-color: rgb(23, 226, 182);
+  position: fixed;
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  width: auto;
+}
+
+.box-two4 {
+  background-color: rgb(34, 0, 224);
+  position: absolute;
+  z-index: 1;
+  right: 2em;
+  bottom: -2rem;
+
+  /* when set to absolute positioning an element that element will remove the normal flow of the page, the absolute positioning will set to its container. */
+}
+
+.box-three4 {
+  background-color: lightskyblue;
+}
+
+div[class^="boxes"] {
+  margin-bottom: 10px;
+}

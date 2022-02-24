@@ -1,0 +1,46 @@
+body {
+  margin: 10px;
+}
+
+div {
+  margin-bottom: 70px;
+}
+
+p {
+  margin: 0px;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid green;
+  overflow: scroll;
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid yellow;
+  overflow: auto;
+}
+
+.box4 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid blue;
+  overflow: hidden;
+}
+
+.box5 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid tomato;
+  /* horizontal vertical */
+  overflow: hidden auto;
+}

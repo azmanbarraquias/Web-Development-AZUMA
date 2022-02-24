@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  /* Universal selector */
+  box-sizing: border-box;
+}
+
+.box1::before {
+  content: "Hello";
+}
+
+div {
+  width: 200px;
+  height: 200px;
+}
+.box1 {
+  background-color: grey;
+  padding: 20px;
+  border: 10px solid salmon;
+}
+
+.box2 {
+  background-color: grey;
+  padding: 20px;
+  border: 10px solid rgb(228, 23, 0);
+  margin: 10px;
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  /* box-sizing: border-box; - subtract the size of the element  */
+  box-sizing: border-box;
+}
+
+.box4 {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  /* box-sizing: border-box; - subtract the size of the element  */
+  box-sizing: border-box;
+  display: inline-block;
+}

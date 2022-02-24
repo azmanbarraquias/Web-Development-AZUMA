@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  padding: 10px;
+  background-color: gold;
+}
+
+.box:nth-last-of-type(2) {
+  background-color: hotpink;
+}
+
+/*
+    screen for web
+    print for printer
+    Between 600px-900px
+  @media screen and (min-width: 600px) and (max-width: 900px) apply this style
+    */
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box {
+    background-color: rgb(100, 226, 17);
+  }
+}
+
+@media print {
+  body {
+    font-size: 12pt;
+  }
+
+  .box {
+    background-color: gray;
+    padding: 0.5cm;
+  }
+  .box::after {
+    content: "..";
+  }
+}

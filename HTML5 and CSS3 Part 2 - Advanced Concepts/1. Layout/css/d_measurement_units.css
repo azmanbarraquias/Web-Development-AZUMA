@@ -1,0 +1,98 @@
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+body {
+  margin: 10px;
+  /* 
+    Default:
+    body is block element by default the width of block element is 100%.
+    width: 100%;
+    height: height will increase to fit the content.
+
+    */
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+  border-top: 5px solid black;
+}
+
+.box2 {
+  /* 50% of the width of the parent */
+  width: 50%;
+  height: 200px;
+  background-color: blue;
+  border-top: 5px solid black;
+}
+
+.box3 {
+  /* 50% of the width of the parent */
+  width: 50%;
+  height: 100%;
+  background-color: red;
+  border-top: 5px solid black;
+}
+
+.box4 {
+  /* 20% of the width of the viewport */
+  width: 20vw;
+  height: 100vh;
+  background-color: rebeccapurple;
+  border-top: 5px solid black;
+}
+
+.box5 {
+  /* 10em means, 10 x font size of the current element
+        if this element doesn't have font element
+        it will inherit from the browser, by default is 16px
+        therefore 10 * 16 = 160px.
+        , 10 * 20 = 200px;
+    */
+  font-size: 20px;
+  width: 10em;
+  height: 10em;
+  background-color: green;
+  border-top: 5px solid black;
+}
+
+.box6 {
+  /* 10rem means, 10 x font size of the root element
+        by default is 16px get from the browser.
+        therefore 10 * 16 = 160px.
+
+        ! 62.5% of 16px = 10px
+          font-size: 62.5%; 
+    */
+
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(70, 8, 216);
+  border-top: 5px solid black;
+}
+
+/* 
+      Measurement Units
+      (Absolute)
+      > px
+      --- for printing
+      pt, in, cm, mm.
+
+      (Relative)
+      -Relative to the size of the container
+      > %
+
+      - Relative to the viewport
+      > vw
+      > vh
+
+      - Relative to the font size
+      > em
+      > rem  
+      */

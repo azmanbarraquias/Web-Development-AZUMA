@@ -1,0 +1,286 @@
+div[class^="container"] {
+  margin: 10px;
+}
+
+body {
+  width: 60%;
+  float: left;
+}
+
+.container1 {
+  display: grid;
+  /* 3 x 2 */
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px;
+  border: 3px solid blue;
+}
+
+.container2 {
+  display: grid;
+  /* 3 x 2 */
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(2, 100px);
+
+  border: 3px solid red;
+}
+
+.container3 {
+  display: grid;
+  /* shorthand */
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  border: 3px solid green;
+}
+
+.container4 {
+  display: grid;
+  /* shorthand */
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  border: 3px solid green;
+}
+
+.box4 {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+}
+
+.container5 {
+  display: grid;
+  /* shorthand */
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  border: 3px solid green;
+  justify-items: center;
+  align-items: center;
+}
+
+.box5 {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+}
+
+.container6 {
+  display: grid;
+  /* shorthand */
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  border: 3px solid green;
+  justify-items: center;
+  align-items: center;
+
+  /* Align the grid it self */
+  justify-content: center;
+  align-content: flex-end;
+  height: 100vh;
+}
+
+.box6 {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+}
+
+.container7 {
+  display: grid;
+  /* shorthand */
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  border: 3px solid green;
+  /* justify-items and align-items default value is stretch */
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.box7 {
+  background-color: gold;
+}
+
+.container8 {
+  display: grid;
+  /* shorthand */
+  grid-template: repeat(3, 100px) / 100px 30% 70%;
+  border: 3px solid green;
+  /* justify-items and align-items default value is stretch */
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.box8 {
+  background-color: gold;
+}
+
+.container9 {
+  display: grid;
+  /* fr a fraction of available space */
+  grid-template: repeat(3, 100px) / 100px 30fr 70fr;
+  border: 3px solid green;
+  /* justify-items and align-items default value is stretch */
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.box9 {
+  background-color: gold;
+}
+
+.container10 {
+  display: grid;
+  /* fr a fraction of available space */
+  grid-template: 100px auto 100px/ 30fr 70fr;
+  border: 3px solid green;
+  /* justify-items and align-items default value is stretch */
+  justify-items: stretch;
+  align-items: stretch;
+  height: 100vh;
+}
+
+.box10 {
+  background-color: gold;
+}
+
+.container11 {
+  display: grid;
+  /* fr a fraction of available space */
+  grid-template: 100px auto 100px/ 30fr 70fr;
+  border: 3px solid green;
+  /* justify-items and align-items default value is stretch */
+  justify-items: stretch;
+  align-items: stretch;
+  height: 100vh;
+
+  column-gap: 10px;
+  row-gap: 10px;
+  /* shorthand gap: row column */
+}
+
+.box11 {
+  background-color: gold;
+}
+
+.container12 {
+  display: grid;
+  /* fr a fraction of available space */
+  grid-template: 100px auto 100px/ 30fr 70fr;
+  border: 3px solid green;
+  /* justify-items and align-items default value is stretch */
+  justify-items: stretch;
+  align-items: stretch;
+  height: 100vh;
+
+  column-gap: 10px;
+  row-gap: 10px;
+  /* shorthand gap: row column */
+}
+
+.box12 {
+  background-color: gold;
+}
+
+.box-one12 {
+  grid-column: 2;
+}
+
+.container13 {
+  display: grid;
+  /* fr a fraction of available space */
+  grid-template: 100px auto 100px/ 30fr 70fr;
+  border: 3px solid green;
+  /* justify-items and align-items default value is stretch */
+  justify-items: stretch;
+  align-items: stretch;
+  height: 100vh;
+
+  column-gap: 10px;
+  row-gap: 10px;
+  /* shorthand gap: row column */
+}
+
+.box13 {
+  background-color: gold;
+}
+
+.box-one13 {
+  /* 3 or -1 is the same */
+  grid-column: 1 / 3;
+}
+
+.container14 {
+  display: grid;
+  /* fr a fraction of available space */
+  grid-template: 100px auto 100px/ 30fr 70fr;
+  border: 3px solid green;
+  /* justify-items and align-items default value is stretch */
+  justify-items: stretch;
+  align-items: stretch;
+  height: 100vh;
+
+  column-gap: 10px;
+  row-gap: 10px;
+  /* shorthand gap: row column */
+}
+
+.box14 {
+  background-color: gold;
+}
+
+.box-one14 {
+  grid-column: 1 / span 2;
+  /* or 2/ span 2 */
+  grid-row: 2/ 4;
+}
+
+.container15 {
+  display: grid;
+  /* fr a fraction of available space */
+  grid-template: 100px auto 100px/ 30fr 70fr;
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  footer";
+  border: 3px solid green;
+  /* justify-items and align-items default value is stretch */
+  justify-items: stretch;
+  align-items: stretch;
+  height: 100vh;
+  gap: 10px 10px;
+  /* shorthand gap: row column */
+}
+
+.box15 {
+  background-color: gold;
+}
+
+.box-one15 {
+  grid-column: 1 / span 2;
+  /* start / end */
+  /* row / column */
+  grid-row: 1 / 1 / 1 / 3;
+}
+
+.container16 {
+  display: grid;
+  /* fr a fraction of available space */
+  grid-template: 100px auto 100px/ 30fr 70fr;
+  /* period . empty cell */
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    ".  footer";
+  border: 3px solid green;
+  /* justify-items and align-items default value is stretch */
+  height: 100vh;
+
+  column-gap: 10px;
+  row-gap: 10px;
+  /* shorthand gap: row column */
+}
+
+.box16 {
+  background-color: gold;
+}
+
+.box-one16 {
+  grid-area: header;
+}
+
+.box-five16 {
+  grid-area: footer;
+}

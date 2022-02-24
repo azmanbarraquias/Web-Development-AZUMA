@@ -1,0 +1,308 @@
+body {
+  width: 50%;
+}
+div[class^="container"] {
+  margin: 10px;
+}
+.container {
+  border: 3px solid lightgray;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+  background-color: violet;
+  margin: 1rem;
+}
+
+/*  Enable flex */
+.container1 {
+  border: 3px solid lightgray;
+  display: flex;
+}
+
+.box1 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(58, 207, 28);
+  margin: 1rem;
+}
+
+.container2 {
+  border: 3px solid lightgray;
+  display: flex;
+  /*  flex-direction: default is row */
+  flex-direction: row-reverse;
+}
+
+.box2 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(58, 207, 28);
+  margin: 1rem;
+}
+
+.container2 {
+  border: 3px solid lightgray;
+  display: flex;
+  /*  flex-direction: default is row */
+  flex-direction: row-reverse;
+}
+
+.box2 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(58, 207, 28);
+  margin: 1rem;
+}
+
+/* Alignment */
+
+.container2 {
+  border: 3px solid lightgray;
+  display: flex;
+  /*  flex-direction: default is row */
+  flex-direction: row-reverse;
+}
+
+.box2 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(224, 85, 30);
+  margin: 1rem;
+}
+
+.container3 {
+  border: 3px solid lightgray;
+  display: flex;
+  /*  flex-direction: default is row */
+  flex-direction: row;
+  /* justify-content:default is flex-start */
+  justify-content: center;
+}
+
+.box3 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(79, 69, 212);
+  margin: 1rem;
+}
+
+.container4 {
+  border: 3px solid lightgray;
+  display: flex;
+  /*  flex-direction: default is row */
+  flex-direction: row;
+  /* justify-content:default is flex-start */
+  justify-content: space-between;
+}
+
+.box4 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(79, 69, 212);
+  margin: 1rem;
+}
+
+.container5 {
+  border: 3px solid lightgray;
+  display: flex;
+  /*  flex-direction: default is row */
+  flex-direction: row;
+  /* justify-content:default is flex-start */
+  /*
+        justify-content: X axis
+        align-items: Y axis
+     */
+  justify-content: center;
+
+  align-items: center;
+  height: 30vh;
+}
+
+.box5 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(46, 240, 198);
+  margin: 1rem;
+}
+
+.container6 {
+  border: 3px solid lightgray;
+  display: flex;
+  /*  flex-direction: default is row */
+  flex-direction: row;
+  /* justify-content:default is flex-start */
+  /*
+        justify-content: X axis
+        align-items: Y axis
+     */
+  justify-content: center;
+
+  align-items: center;
+  height: 30vh;
+}
+
+.box6 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(218, 25, 25);
+  margin: 1rem;
+}
+
+.container7 {
+  border: 3px solid lightgray;
+  display: flex;
+  /*  flex-direction: default is row */
+  flex-direction: row;
+  /* justify-content:default is flex-start */
+  /*
+        justify-content: X axis
+        align-items: Y axis
+     */
+  justify-content: center;
+
+  align-items: center;
+  height: 70vh;
+  /*
+    flex-wrap: default is no warp;
+     */
+  flex-wrap: wrap;
+}
+
+.box7 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(214, 32, 169);
+  margin: 1rem;
+}
+
+.container8 {
+  border: 3px solid lightgray;
+  display: flex;
+  /*  flex-direction: default is row */
+  flex-direction: row;
+  /* justify-content:default is flex-start */
+  /*
+        justify-content: X axis
+        align-items: Y axis
+     */
+  justify-content: center;
+
+  align-items: center;
+  height: 70vh;
+  /*
+    flex-wrap: default is no warp;
+     */
+  flex-wrap: wrap;
+
+  align-content: center;
+}
+
+.box8 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(182, 211, 18);
+  margin: 1rem;
+}
+
+.container9 {
+  border: 3px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.box9 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(20, 193, 216);
+  margin: 1rem;
+}
+
+.box9-one {
+  /* override the align-item:center -> flex-start */
+  align-self: flex-start;
+}
+
+.container10 {
+  border: 3px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.box10 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(238, 95, 69);
+  margin: 1rem;
+
+  /* flex-basic: default is auto */
+  /* flex-basic - override the width property or depend on the direction
+       since the flex basic is row flex-basic effect on width else height if column
+    */
+  flex-basis: 10rem;
+}
+
+.box10-one {
+  flex-basis: 5rem;
+}
+
+.container11 {
+  border: 3px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.box11 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(214, 35, 175);
+  margin: 1rem;
+
+  /* flex-basic: default is auto */
+  /* flex-basic - override the width property or depend on the direction
+       since the flex basic is row flex-basic effect on width else height if column
+    */
+  flex-basis: 15rem;
+
+  /* flex-shrink: default is 1, minimum of shrink */
+  flex-shrink: 1;
+}
+
+.box11-one {
+  /* prevent from shrinking */
+  flex-shrink: 0;
+}
+
+.container12 {
+  border: 3px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.box12 {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(113, 50, 230);
+  margin: 1rem;
+
+  /* shorthand: flex:(grow)(shrink))(basis) take 0-1 only */
+  flex: 0.5 1 10rem;
+}
+
+.box12-one {
+  /* prevent from shrinking */
+  flex-shrink: 0;
+}
