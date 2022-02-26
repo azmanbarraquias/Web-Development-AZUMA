@@ -57,3 +57,9 @@ ol {
 ol li {
   margin-bottom: 1.5rem;
 }
+
+@media screen and (max-width: 1140px) {
+  body {
+    padding: 0;
+  }
+}
