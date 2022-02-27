@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h2>Terms</h2>
+      <ul>
+        <li>Physical resolution iphone 4 = 960 x 640</li>
+        <li>
+          Logical resolution iphone 4 = 480 x 320 css is always base on logical
+          resolutions
+        </li>
+        <li>Device pixel ratio (DPR) iphone 4 = 2</li>
+        <li>High Density dpr > 1</li>
+      </ul>
+    </div>
+    <!-- <img src="images/meal.jpg" alt="A bowl of curry salmon" /> -->
+    <!-- depend of device ratio on mac 2x ratio -->
+    <img
+      src="images/meal.jpg"
+      alt="A bowl of curry salmon"
+      srcset="images/meal.jpg 1x, images/meal@2x.jpg 2x, images/meal@3x.jpg 3x"
+    />
+  </body>
+</html>

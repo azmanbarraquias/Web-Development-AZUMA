@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="https://cloudconvert.com/jpg-to-webp" target="_blank"
+      >Cloud Convert</a
+    ><br />
+    <!-- <img src="images/meal.jpg" alt="" />
+    <img src="images/meal.webp" alt="" /> -->
+    <picture>
+      <!-- Picture element support internet explorer  each picture can have multiple sources.-->
+      <source type="image/webp" srcset="images/meal.webp" />
+      <source type="image/jpeg" srcset="images/meal.jpg" />
+      <img src="images/meal.jpg" alt="A bowl of curry salmon" />
+    </picture>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/necolas_normalize_css.css" />
+    <script
+      src="https://kit.fontawesome.com/68a780fa8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        font-size: 2rem;
+      }
+
+      .menu {
+        background: #2a2138;
+        color: white;
+        padding: 0;
+        margin: 0;
+      }
+
+      .menu a {
+        /* I've used inherit here so if we change the color of the text in the
+        .menu rule (above), all anchors in the menu will automatically inherit 
+        in the new color. Alternatively, I'd have to specify the same color in 
+        two places. */
+        color: inherit;
+        text-decoration: inherit;
+      }
+
+      .menu li {
+        padding: 2rem;
+        list-style-type: none;
+      }
+
+      .menu li:hover,
+      .menu li:focus {
+        background-color: #221a2e;
+      }
+
+      .fa-solid,
+      .fa-brands {
+        margin-right: 3rem;
+        width: 2rem;
+        text-align: center;
+      }
+
+      @media screen and (min-width: 768px) {
+        .menu {
+          width: 20%;
+          height: 100vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="#"><i class="fa-solid fa-gauge"> </i>Dashboard</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-user"> </i>Users</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-sitemap"> </i>Site</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-salesforce"> </i>Sales</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-envelope"> </i>Emails</a>
+        </li>
+        <li>
+          <a href="https://google.com" target="_blank"
+            ><i class="fa-solid fa-gears"> </i>Settings</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
