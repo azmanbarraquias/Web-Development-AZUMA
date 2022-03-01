@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/necolas_normalize_css.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <style>
+      body {
+        margin: 10px;
+      }
+      form {
+        width: 50%;
+        padding: 2rem;
+      }
+
+      div {
+        margin-bottom: 20px;
+      }
+
+      .radio-selection label {
+        display: inline;
+      }
+
+      .radio-selection div {
+        margin-bottom: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="button" value="This is a button input" />
+      <input type="reset" value="Clear" />
+      <input type="submit" value="Submit" />
+      <button disabled="disabled">Disable Button</button>
+      <button type="reset">Reset</button>
+      <button type="submit">Send</button>
+
+      <div>
+        <label for="search-box">Search:</label>
+        <input type="search" name="" id="search-box" />
+      </div>
+      <div>
+        <input type="checkbox" name="" id="show" />
+        <label for="show" style="display: inline">Show Password </label>
+      </div>
+
+      <div>
+        <label for="fevorite-color">Color: </label>
+        <input type="color" name="" id="fevorite-color" />
+      </div>
+
+      <div>
+        <label for="date-selection">Date:</label>
+        <input type="date" name="" id="date-selection" />
+      </div>
+      <div>
+        <label for="time-selection">Time:</label>
+        <input type="time" name="" id="time-selection" />
+      </div>
+      <div>
+        <label for="datetime-selection">Date and Time:</label>
+        <input type="datetime-local" name="" id="datetime-selection" />
+      </div>
+      <div>
+        <label for="month-selection">Month:</label>
+        <input type="month" name="" id="month-selection" />
+      </div>
+      <div>
+        <label for="user-email">Email</label>
+        <input type="email" name="" id="user-email" />
+      </div>
+      <div>
+        <label for="user-password">Password:</label>
+        <input type="password" name="" id="user-password" />
+      </div>
+      <div>
+        <label for="user-password">Insert Image: </label>
+        <input type="file" name="" id="" accept="image/png, image/jpeg" />
+      </div>
+      <div class="radio-selection">
+        <p>
+          Click on one of the text labels to toggle the related radio button:
+        </p>
+        <div>
+          <input type="radio" id="huey" name="drone" value="huey" checked />
+          <label for="huey">Huey</label>
+        </div>
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey" />
+          <label for="dewey">Dewey</label>
+        </div>
+        <div>
+          <input type="radio" id="louie" name="drone" value="louie" />
+          <label for="louie">Louie</label>
+        </div>
+      </div>
+    </form>
+    <div>
+      <h3>Deprecated</h3>
+      <p>
+        This feature is no longer recommended. Though some browsers might still
+        support it, it may have already been removed from the relevant web
+        standards, may be in the process of being dropped, or may only be kept
+        for compatibility purposes. Avoid using it, and update existing code if
+        possible.
+      </p>
+      <input type="datetime" name="" id="" value="datetime" />
+    </div>
+  </body>
+</html>
