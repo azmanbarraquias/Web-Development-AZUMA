@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 5rem;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: gold;
+      }
+
+      .container {
+        perspective: 200px;
+      }
+
+      .container:hover .box {
+        /* perspective the distance between element and us */
+        /* transform: perspective(200px) translateZ(-50px); */
+        /* transform: perspective(200px) rotate(45deg); */
+        /* by default the origin is center */
+        transform: rotateY(45deg);
+        /* 0 0 top left of the box (x y) */
+        transform-origin: 0 50%;
+      }
+
+      .container:hover .box-special {
+        transform: rotateX(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Transformations</h2>
+      <ul>
+        <li>rotate()</li>
+        <li>scale()</li>
+        <li>skew()</li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, vel.
+      </div>
+      <div class="box box-special">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, vel.
+      </div>
+    </div>
+  </body>
+</html>

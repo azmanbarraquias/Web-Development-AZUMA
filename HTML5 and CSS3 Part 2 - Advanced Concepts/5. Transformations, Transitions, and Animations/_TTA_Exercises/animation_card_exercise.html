@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        font-size: 1.6rem;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+      }
+
+      .business-card {
+        background-color: rgb(238, 255, 243);
+        max-width: 500px;
+        width: 100%;
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: 3px 3px 30px #b4b4b4;
+        transform: rotate(-5deg);
+        transition: transform 0.2s ease-in;
+      }
+
+      .business-card p {
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      .footer img {
+        width: 5rem;
+        height: 5rem;
+
+        object-fit: cover;
+        border: 5px solid white;
+        border-radius: 50%;
+        transition: transform 0.2s ease-in, border 0.2s ease-in;
+      }
+
+      .footer {
+        background: rgb(116, 214, 144);
+        background: linear-gradient(
+          90deg,
+          rgba(116, 214, 144, 1) 0%,
+          rgba(92, 191, 187, 1) 100%
+        );
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      .footer h1 {
+        padding-left: 2rem;
+        color: white;
+        font-size: 2rem;
+        font-weight: 600;
+        transition: transform 0.2s ease-in;
+      }
+
+      .business-card:hover {
+        transform: rotate(0);
+      }
+
+      .business-card:hover .footer img {
+        transform: scale(1.5);
+        border: 3px solid rgb(216, 249, 255);
+      }
+      .business-card:hover .footer h1 {
+        transform: translateX(5rem) scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="business-card">
+      <div class="details">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
+          soluta vero eum vitae fugiat perspiciatis, inventore optio consequatur
+          repellendus natus.
+        </p>
+      </div>
+      <div class="footer">
+        <img
+          src="/HTML5 and CSS3 Part 1 - Fundamentals of Web Development/2. HTML Basic/images/Azman.png"
+          alt=""
+        />
+        <h1>Azman Barraquias</h1>
+      </div>
+    </div>
+  </body>
+</html>
