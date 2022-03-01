@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Custom Property */
+      :root {
+        --primary-color: #ffdd36;
+        --border-size: 2px;
+        --border: 10px solid black;
+      }
+      .one {
+        background-color: var(--primary-color);
+        border-radius: var(--border-radius);
+        border: var(--border);
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+  </body>
+</html>
